@@ -1,8 +1,9 @@
 ARG PYTHON_VERSION=3.14.2-slim-trixie
-ARG PACKAGE_NAME=avaintegration_metapackage
-ARG PACKAGE_VERSION
 
 FROM python:${PYTHON_VERSION} AS build
+
+ARG PACKAGE_NAME=avaintegration_metapackage
+ARG PACKAGE_VERSION
 
 ENV PYTHONUNBUFFERED=1
 
