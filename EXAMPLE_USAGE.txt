@@ -1,0 +1,35 @@
+# Example: Como usar o meta pacote em seus projetos
+
+## Opção 1: Instalação Direta
+# Instale diretamente via pip:
+# pip install django-integration-metapackage
+
+## Opção 2: Em requirements.txt
+# Adicione ao seu requirements.txt:
+django-integration-metapackage==1.0.0
+
+# Isso instalará automaticamente todas as dependências:
+# - Django==5.2.10
+# - django-rule-engine==1.0.1
+# - django-dsgovbr==5.2.3
+# - django-better-choices==1.18
+# - jsonschema==4.26.0
+# - rule-engine==4.5.3
+# - requests==2.32.5
+# - django-valkey==0.4.0
+# - django-simple-history==3.11.0
+# - whitenoise==6.11.0
+# - django-import-export==4.4.0
+# - django-json-widget==2.1.1
+# - django-admin-autocomplete-filter==0.7.1
+# - django-richtextfield==1.6.2
+# - psycopg[binary,pool]==3.3.2
+
+## Opção 3: Em pyproject.toml
+# [project]
+# dependencies = [
+#     "django-integration-metapackage==1.0.0",
+# ]
+
+## Opção 4: Instalação Local (Desenvolvimento)
+# pip install -e /path/to/python-integration_metapackage
