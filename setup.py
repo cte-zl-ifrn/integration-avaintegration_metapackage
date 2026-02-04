@@ -1,9 +1,35 @@
 from setuptools import setup
+from pathlib import Path
+
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.md").read_text(encoding="utf-8")
 
 setup(
     name="avaintegration_metapackage",
-    version="1.0.0",
+    version="1.0.1",
     description="Meta-pacote para projetos Django",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    author="IFRN - DEAD",
+    author_email="dead.zl@ifrn.edu.br",
+    url="https://github.com/IFRN/ava-metapackage",
+    project_urls={
+        "Bug Reports": "https://github.com/IFRN/ava-metapackage/issues",
+        "Source": "https://github.com/IFRN/ava-metapackage",
+    },
+    classifiers=[
+        "Development Status :: 4 - Beta",
+        "Intended Audience :: Developers",
+        "Framework :: Django",
+        "Framework :: Django :: 5.2",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.12",
+        "Programming Language :: Python :: 3.13",
+        "Programming Language :: Python :: 3.14",
+        "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+        "Operating System :: OS Independent",
+    ],
+    python_requires=">=3.12",
     install_requires=[
         # Core
         "Django==5.2.11",
