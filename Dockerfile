@@ -1,4 +1,4 @@
-ARG PYTHON_VERSION=3.14.2-slim-trixie
+ARG PYTHON_VERSION=3.14.3-slim-trixie
 
 FROM python:$PYTHON_VERSION AS build
 
