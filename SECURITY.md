@@ -150,9 +150,34 @@ Mantemos logs de:
 
 ## Histórico de Segurança
 
-Nenhum incidente de segurança reportado até o momento.
+### [2026-03] Django 5.2.12 — Correção de Vulnerabilidades de Segurança
+
+**Dependência afetada**: Django  
+**Versão vulnerável**: >= 5.2, < 5.2.12  
+**Versão corrigida**: 5.2.12  
+**Ação tomada**: Atualização de `Django==5.2.11` para `Django==5.2.12` em `setup.py`
+
+#### Vulnerabilidade 1 — Consumo Descontrolado de Recursos (Denial of Service)
+
+**Alerta Dependabot**: #46  
+**Severidade**: Alta  
+
+**Descrição**: Foi descoberto que `URLField.to_python()` chama `urllib.parse.urlsplit()`, que realiza normalização NFKC no Windows de forma desproporcionalmente lenta para determinados caracteres Unicode. Isso permite que um atacante remoto cause negação de serviço (DoS) fornecendo grandes entradas de URL contendo esses caracteres especiais.
+
+**Impacto**: Negação de serviço via entradas maliciosas em campos de URL.  
+**Crédito**: Seokchan Yoon.
+
+#### Vulnerabilidade 2 — Condição de Corrida (Race Condition)
+
+**Alerta Dependabot**: #47  
+**Severidade**: Média  
+
+**Descrição**: Foi descoberta uma condição de corrida nos backends de armazenamento em sistema de arquivos e de cache baseado em arquivos do Django. Em ambientes multi-thread, a mudança temporária de umask feita por uma thread pode afetar outras threads, resultando na criação de objetos no sistema de arquivos com permissões incorretas durante requisições concorrentes.
+
+**Impacto**: Criação de arquivos com permissões incorretas em ambientes multi-thread.  
+**Crédito**: Tarek Nakkouch.
 
 ---
 
-**Última atualização**: Fevereiro 2026  
+**Última atualização**: Março 2026  
 **Mantido por**: IFRN - Diretoria de Educação a Distância (DEAD)
