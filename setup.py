@@ -6,7 +6,7 @@ long_description = (this_directory / "README.md").read_text(encoding="utf-8")
 
 setup(
     name="avaintegration_metapackage",
-    version="1.0.1",
+    version="1.0.2",
     description="Meta-pacote para projetos Django",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -32,7 +32,7 @@ setup(
     python_requires=">=3.12",
     install_requires=[
         # Core
-        "Django==5.2.11",
+        "Django==5.2.12",
         "sc4py==0.1.4",
         "django-extensions==4.1",
 
@@ -63,7 +63,7 @@ setup(
         "django-simple-history==3.11.0",
 
         # UI
-        "whitenoise==6.11.0",
+        "whitenoise==6.12.0",
         "django-import-export==4.4.0",
         "django-json-widget==2.1.1",
         "django-admin-autocomplete-filter==0.7.1",
@@ -73,15 +73,15 @@ setup(
         "django-sass-processor==1.4.2",        
 
         # Database
-        "psycopg[binary,pool]==3.3.2",
+        "psycopg[binary,pool]==3.3.3",
 
         # # Image
         # "pillow==11.3.0",
 
         # Production
-        "sentry-sdk[django,rq]==2.49.0",
-        "gunicorn==23.0.0",
-        "uvicorn==0.40.0",
+        "sentry-sdk[django,rq]==2.54.0",
+        "gunicorn==25.1.0",
+        "uvicorn==0.41.0",
     ],
     packages=["avaintegration_metapackage"],
 )
