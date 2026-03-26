@@ -49,7 +49,7 @@ setup(
 
         # REST
         "httpie==3.2.4",
-        "requests==2.32.5",
+        "requests==2.33.0",
 
         # Cache and Session
         "django-valkey==0.4.0",
