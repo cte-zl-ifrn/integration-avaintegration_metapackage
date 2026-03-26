@@ -41,7 +41,7 @@ setup(
         "django-dsgovbr==5.2.3",
 
         # Models
-        "django-better-choices==1.18",
+        "django-better-choices==3.1",
 
         # Rule engine
         "jsonschema==4.26.0",
