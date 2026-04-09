@@ -32,48 +32,7 @@ Um metapackage é um pacote Python que não contém código próprio, mas declar
 
 ## 🎯 Dependências Incluídas
 
-### Core Django
-- Django 5.2.11
-- django-extensions 4.1
-- sc4py 0.1.4
-
-### Pacotes Internos DEAD
-- django-rule-engine 1.0.1
-- django-dsgovbr 5.2.3
-
-### Banco de Dados
-- psycopg[binary,pool] 3.3.2
-
-### Models & Validação
-- django-better-choices 1.18
-- jsonschema 4.26.0
-- rule-engine 4.5.3
-
-### REST & HTTP
-- httpie 3.2.4
-- requests 2.32.5
-
-### Cache & Session
-- django-valkey 0.4.0
-- valkey 6.1.1
-
-### Auditoria
-- django-simple-history 3.11.0
-
-### Interface & UI
-- whitenoise 6.11.0
-- django-import-export 4.4.0
-- django-json-widget 2.1.1
-- django-admin-autocomplete-filter 0.7.1
-- django-richtextfield 1.6.2
-- libsass 0.23.0
-- django-compressor 4.6.0
-- django-sass-processor 1.4.2
-
-### Produção & Monitoramento
-- sentry-sdk[django,rq] 2.49.0
-- gunicorn 23.0.0
-- uvicorn 0.40.0
+Olhe o arquivo `setup.py`, atributo `install_requires`.
 
 ## 🚀 Instalação
 
@@ -94,46 +53,11 @@ FROM avaintegrationbase:latest
 Ou versão específica:
 
 ```dockerfile
-FROM avaintegrationbase:1.0.0
-```
-
-## 📋 Uso
-
-### Em projetos Django
-
-Adicione ao seu `requirements.txt` ou `pyproject.toml`:
-
-```txt
-avaintegration_metapackage==1.0.0
-```
-
-### Com Poetry
-
-```bash
-poetry add avaintegration_metapackage
-```
-
-### Com pip-tools
-
-```txt
-# requirements.in
-avaintegration_metapackage==1.0.0
-```
-
-```bash
-pip-compile requirements.in
-pip-sync requirements.txt
+FROM avaintegrationbase:1.0.3
 ```
 
 ## 🔄 Workflow de CI/CD
 
-Este projeto utiliza GitHub Actions para automatizar:
-
-1. **Publicação no PyPI** ao criar uma tag Git
-2. **Build da imagem Docker** usando o pacote publicado
-3. **Push para Docker Hub** com tags `latest` e versionada
-
-### Como fazer um release
 
 ```bash
 # 1. Atualize a versão no setup.py (será sobrescrita pela tag)
