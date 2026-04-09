@@ -1,4 +1,3 @@
-# AVA Integration Metapackage
 
 [![PyPI version](https://badge.fury.io/py/avaintegration-metapackage.svg)](https://badge.fury.io/py/avaintegration-metapackage)
 [![Python Version](https://img.shields.io/pypi/pyversions/avaintegration-metapackage.svg)](https://pypi.org/project/avaintegration-metapackage/)
@@ -9,6 +8,7 @@
 [![GitHub Issues](https://img.shields.io/github/issues/cte-zl-ifrn/integration-avaintegration_metapackage)](https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/issues)
 [![GitHub Last Commit](https://img.shields.io/github/last-commit/cte-zl-ifrn/integration-avaintegration_metapackage)](https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/commits/main)
 
+# AVA Integration Metapackage
 Meta-pacote Python que agrega todas as dependências necessárias para projetos Django do ecossistema de Integração AVA (Integrador, Painel e Gestor).
 
 
