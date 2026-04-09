@@ -11,5 +11,5 @@ FROM python:$PYTHON_VERSION AS base
 
 ENV PYTHONUNBUFFERED=1
 
-RUN    pip install "avaintegration_metapackage==6.0.4.002" \
+RUN    pip install "avaintegration_metapackage==6.0.4.3" \
     && useradd -ms /usr/sbin/nologin app
