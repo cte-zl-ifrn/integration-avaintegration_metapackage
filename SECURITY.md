@@ -4,10 +4,11 @@
 
 Apenas a versão mais recente do `avaintegration_metapackage` recebe atualizações de segurança.
 
-| Versão | Suportada          |
-| ------ | ------------------ |
-| 1.0.x  | :white_check_mark: |
-| < 1.0  | :x:                |
+| Versão   | Suportada          |
+| -------- | ------------------ |
+| 6.0.4.x  | :white_check_mark: |
+| 1.0.x    | :x:                |
+| < 1.0    | :x:                |
 
 ## Dependências e Atualizações
 
