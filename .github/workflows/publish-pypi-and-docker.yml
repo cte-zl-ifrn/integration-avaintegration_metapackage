@@ -71,5 +71,4 @@ jobs:
             ${{ secrets.DOCKERHUB_USERNAME }}/avaintegrationbase:latest
             ${{ secrets.DOCKERHUB_USERNAME }}/avaintegrationbase:${{ github.ref_name }}
           build-args: |
-            PACKAGE_NAME=avaintegration_metapackage
             PACKAGE_VERSION=${{ github.ref_name }}
