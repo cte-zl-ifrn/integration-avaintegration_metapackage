@@ -117,10 +117,6 @@ docker build -t avaintegrationbase:test -f .github/docker/Dockerfile \
   --build-arg PACKAGE_VERSION=6.0.4.3 .
 ```
 
-## 📝 Licença
-
-A licença deste projeto está especificada no arquivo [LICENSE](LICENSE).
-
 ## 🤝 Contribuindo
 
 Contribuições são bem-vindas! Por favor:
