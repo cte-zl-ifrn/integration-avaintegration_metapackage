@@ -11,13 +11,13 @@
 
 ### Tecnologias
 
-![Django](https://img.shields.io/badge/Django-5.2.11-092E20?style=flat&logo=django&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=flat&logo=python&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-3.3.2-336791?style=flat&logo=postgresql&logoColor=white)
+![Django](https://img.shields.io/badge/Django-6.0.4-092E20?style=flat&logo=django&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.14.4-3776AB?style=flat&logo=python&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-336791?style=flat&logo=postgresql&logoColor=white)
 ![Redis](https://img.shields.io/badge/Valkey-6.1.1-DC382D?style=flat&logo=redis&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-enabled-2496ED?style=flat&logo=docker&logoColor=white)
-![Gunicorn](https://img.shields.io/badge/Gunicorn-23.0.0-499848?style=flat&logo=gunicorn&logoColor=white)
-![Sentry](https://img.shields.io/badge/Sentry-2.49.0-362D59?style=flat&logo=sentry&logoColor=white)
+![Gunicorn](https://img.shields.io/badge/Gunicorn-25.3.0-499848?style=flat&logo=gunicorn&logoColor=white)
+![Sentry](https://img.shields.io/badge/Sentry-2.57.0-362D59?style=flat&logo=sentry&logoColor=white)
 
 Meta-pacote Python que agrega todas as dependências necessárias para projetos Django do ecossistema de Integração AVA (Integrador, Painel e Gestor).
 
