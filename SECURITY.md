@@ -82,10 +82,10 @@ Por favor, reporte vulnerabilidades de segurança de forma privada:
 
 ```bash
 # ✅ Use versões específicas, não 'latest'
-pip install avaintegration_metapackage==6.0.4.001
+pip install avaintegration_metapackage==6.0.4.002
 
 # ✅ Verifique integridade com hash (quando disponível)
-pip install avaintegration_metapackage==6.0.4.001 \
+pip install avaintegration_metapackage==6.0.4.002 \
   --hash=sha256:...
 
 # ✅ Use ambientes isolados

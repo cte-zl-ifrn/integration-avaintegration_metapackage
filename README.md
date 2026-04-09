@@ -53,7 +53,7 @@ FROM avaintegrationbase:latest
 Ou versão específica:
 
 ```dockerfile
-FROM avaintegrationbase:6.0.4.001
+FROM avaintegrationbase:6.0.4.002
 ```
 
 ## 🔄 Workflow de CI/CD
@@ -119,7 +119,7 @@ pip install dist/avaintegration_metapackage-*.whl
 
 # Teste da imagem Docker
 docker build -t avaintegrationbase:test -f .github/docker/Dockerfile \
-  --build-arg PACKAGE_VERSION=6.0.4.001 .
+  --build-arg PACKAGE_VERSION=6.0.4.002 .
 ```
 
 ## 📝 Licença
