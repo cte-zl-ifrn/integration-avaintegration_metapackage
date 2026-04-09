@@ -32,7 +32,7 @@ setup(
     python_requires=">=3.12",
     install_requires=[
         # Core
-        "Django==6.0.3",
+        "Django==6.0.4",
         "sc4py==0.1.5",
         "django-extensions==4.1",
 
