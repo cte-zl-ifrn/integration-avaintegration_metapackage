@@ -6,7 +6,7 @@ long_description = (this_directory / "README.md").read_text(encoding="utf-8")
 
 setup(
     name="avaintegration_metapackage",
-    version="1.0.2",
+    version="1.0.3",
     description="Meta-pacote para projetos Django",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -21,7 +21,7 @@ setup(
         "Development Status :: 4 - Beta",
         "Intended Audience :: Developers",
         "Framework :: Django",
-        "Framework :: Django :: 5.2",
+        "Framework :: Django :: 6.0",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.12",
         "Programming Language :: Python :: 3.13",
@@ -32,24 +32,23 @@ setup(
     python_requires=">=3.12",
     install_requires=[
         # Core
-        "Django==5.2.12",
-        "sc4py==0.1.4",
+        "Django==6.0.3",
+        "sc4py==0.1.5",
         "django-extensions==4.1",
 
         # Da DEAD
         "django-rule-engine==1.0.1",
-        "django-dsgovbr==5.2.3",
+        "django-dsgovbr==5.2.4",
 
         # Models
         "django-better-choices==3.1",
 
         # Rule engine
         "jsonschema==4.26.0",
-        "rule-engine==4.5.3",
 
         # REST
         "httpie==3.2.4",
-        "requests==2.32.5",
+        "requests==2.33.1",
 
         # Cache and Session
         "django-valkey==0.4.0",
@@ -79,9 +78,9 @@ setup(
         # "pillow==11.3.0",
 
         # Production
-        "sentry-sdk[django,rq]==2.54.0",
-        "gunicorn==25.1.0",
-        "uvicorn==0.41.0",
+        "sentry-sdk[django,rq]==2.57.0",
+        "gunicorn==25.3.0",
+        "uvicorn==0.44.0",
     ],
     packages=["avaintegration_metapackage"],
 )
