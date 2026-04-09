@@ -2,8 +2,8 @@
 
 [![PyPI version](https://badge.fury.io/py/avaintegration-metapackage.svg)](https://badge.fury.io/py/avaintegration-metapackage)
 [![Python Version](https://img.shields.io/pypi/pyversions/avaintegration-metapackage.svg)](https://pypi.org/project/avaintegration-metapackage/)
-[![Docker Image](https://img.shields.io/docker/v/_/avaintegrationbase?label=docker)](https://hub.docker.com/r/avaintegrationbase)
-[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/IFRN/ava-metapackage/publish-pypi-and-docker.yml?branch=main)](https://github.com/IFRN/ava-metapackage/actions)
+[![Docker Image](https://img.shields.io/docker/v/ctezlifrn/avaintegrationbase?label=docker)](https://hub.docker.com/r/ctezlifrn/avaintegrationbase)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/cte-zl-ifrn/integration-avaintegration_metapackage/publish-pypi-and-docker.yml?branch=main)](https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/actions)
 [![GitHub License](https://img.shields.io/github/license/cte-zl-ifrn/integration-avaintegration_metapackage)](hhttps://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/blob/main/LICENSE)
 [![GitHub Stars](https://img.shields.io/github/stars/cte-zl-ifrn/integration-avaintegration_metapackage?style=social)](https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/stargazers)
 [![GitHub Issues](https://img.shields.io/github/issues/cte-zl-ifrn/integration-avaintegration_metapackage)](https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/issues)
