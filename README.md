@@ -9,17 +9,9 @@
 [![GitHub Issues](https://img.shields.io/github/issues/cte-zl-ifrn/integration-avaintegration_metapackage)](https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/issues)
 [![GitHub Last Commit](https://img.shields.io/github/last-commit/cte-zl-ifrn/integration-avaintegration_metapackage)](https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/commits/main)
 
-### Tecnologias
-
-![Django](https://img.shields.io/badge/Django-6.0.4-092E20?style=flat&logo=django&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3.14.4-3776AB?style=flat&logo=python&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-336791?style=flat&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Valkey-6.1.1-DC382D?style=flat&logo=redis&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-enabled-2496ED?style=flat&logo=docker&logoColor=white)
-![Gunicorn](https://img.shields.io/badge/Gunicorn-25.3.0-499848?style=flat&logo=gunicorn&logoColor=white)
-![Sentry](https://img.shields.io/badge/Sentry-2.57.0-362D59?style=flat&logo=sentry&logoColor=white)
-
 Meta-pacote Python que agrega todas as dependências necessárias para projetos Django do ecossistema de Integração AVA (Integrador, Painel e Gestor).
+
+
 
 ## 📦 O que é um metapackage?
 
@@ -30,9 +22,18 @@ Um metapackage é um pacote Python que não contém código próprio, mas declar
 - ✅ **Simplificação** do gerenciamento de dependências
 - ✅ **Sincronização automática** via imagem Docker base
 
-## 🎯 Dependências Incluídas
 
-Olhe o arquivo [setup.py](https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/blob/e7ec1a52f216d008539f4a56161fe9461d360c4e/setup.py#L33), atributo `install_requires`.
+## Tecnologias
+
+![Django](https://img.shields.io/badge/Django-6.0.4-092E20?style=flat&logo=django&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.14.4-3776AB?style=flat&logo=python&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-336791?style=flat&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Valkey-6.1.1-DC382D?style=flat&logo=redis&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-enabled-2496ED?style=flat&logo=docker&logoColor=white)
+![Gunicorn](https://img.shields.io/badge/Gunicorn-25.3.0-499848?style=flat&logo=gunicorn&logoColor=white)
+![Sentry](https://img.shields.io/badge/Sentry-2.57.0-362D59?style=flat&logo=sentry&logoColor=white)
+
+Olhe o arquivo [setup.py](https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/blob/e7ec1a52f216d008539f4a56161fe9461d360c4e/setup.py#L33), atributo `install_requires`, para conhecer as demais bibliotecas.
 
 ## 🚀 Instalação
 
@@ -47,13 +48,7 @@ pip install avaintegration_metapackage
 A imagem Docker base já inclui o metapackage instalado:
 
 ```dockerfile
-FROM avaintegrationbase:latest
-```
-
-Ou versão específica:
-
-```dockerfile
-FROM avaintegrationbase:6.0.4.3
+FROM ctezlifrn/avaintegrationbase:6.0.4.3
 ```
 
 ## 🔄 Workflow de CI/CD
@@ -62,8 +57,8 @@ FROM avaintegrationbase:6.0.4.3
 ```bash
 # 1. Atualize a versão no setup.py (será sobrescrita pela tag)
 # 2. Crie e envie a tag
-git tag 1.0.1
-git push origin 1.0.1
+git tag 6.0.4.3
+git push origin 6.0.4.3
 
 # 3. O GitHub Action irá:
 #    - Atualizar setup.py com a versão da tag
