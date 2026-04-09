@@ -32,7 +32,7 @@ Um metapackage é um pacote Python que não contém código próprio, mas declar
 
 ## 🎯 Dependências Incluídas
 
-Olhe o arquivo `setup.py`, atributo `install_requires`.
+Olhe o arquivo [setup.py](https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/blob/e7ec1a52f216d008539f4a56161fe9461d360c4e/setup.py#L33), atributo `install_requires`.
 
 ## 🚀 Instalação
 
