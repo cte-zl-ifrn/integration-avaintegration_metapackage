@@ -6,7 +6,7 @@ long_description = (this_directory / "README.md").read_text(encoding="utf-8")
 
 setup(
     name="avaintegration_metapackage",
-    version="6.0.4.3",
+    version="6.0.4.4",
     description="Meta-pacote para projetos Django",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -35,32 +35,24 @@ setup(
         "Django==6.0.4",
         "sc4py==0.1.5",
         "django-extensions==4.1",
-
         # Da DEAD
         "django-rule-engine==1.0.1",
         "django-dsgovbr==5.2.4",
-
         # Models
         "django-better-choices==3.1",
-
         # Rule engine
         "jsonschema==4.26.0",
-
         # REST
         "httpie==3.2.4",
         "requests==2.33.1",
-
         # Cache and Session
         "django-valkey==0.4.0",
         "valkey==6.1.1",
-
         # # Security
         # "cryptography==46.0.3",
         # "pyjwt==2.10.1",
-
         # Audit
         "django-simple-history==3.11.0",
-
         # UI
         "whitenoise==6.12.0",
         "django-import-export==4.4.0",
@@ -69,14 +61,11 @@ setup(
         "django-richtextfield==1.6.2",
         "libsass==0.23.0",
         "django-compressor==4.6.0",
-        "django-sass-processor==1.4.2",        
-
+        "django-sass-processor==1.4.2",
         # Database
         "psycopg[binary,pool]==3.3.3",
-
         # # Image
         # "pillow==11.3.0",
-
         # Production
         "sentry-sdk[django,rq]==2.57.0",
         "gunicorn==25.3.0",
