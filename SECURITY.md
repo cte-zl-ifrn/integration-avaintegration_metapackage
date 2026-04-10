@@ -35,7 +35,7 @@ Este metapackage agrega dependências de terceiros. Monitoramos ativamente as vu
 
 Por favor, reporte vulnerabilidades de segurança de forma privada:
 
-1. **Email**: Envie para [ead@ifrn.edu.br](mailto:dead.zl@ifrn.edu.br)
+1. **Email**: Envie para [ead@ifrn.edu.br](mailto:ead@ifrn.edu.br)
 2. **Assunto**: `[SECURITY] avaintegration_metapackage - [descrição breve]`
 3. **Conteúdo mínimo**:
    - Descrição detalhada da vulnerabilidade
