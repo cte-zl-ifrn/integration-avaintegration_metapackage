@@ -35,7 +35,7 @@ Este metapackage agrega dependências de terceiros. Monitoramos ativamente as vu
 
 Por favor, reporte vulnerabilidades de segurança de forma privada:
 
-1. **Email**: Envie para [ead@ifrn.edu.br](mailto:dead.zl@ifrn.edu.br)
+1. **Email**: Envie para [ead@ifrn.edu.br](mailto:ead@ifrn.edu.br)
 2. **Assunto**: `[SECURITY] avaintegration_metapackage - [descrição breve]`
 3. **Conteúdo mínimo**:
    - Descrição detalhada da vulnerabilidade
@@ -151,12 +151,12 @@ Mantemos logs de:
 
 ## Histórico de Segurança
 
-### [2026-03] Django 5.2.12 — Correção de Vulnerabilidades de Segurança
+### [2026-03] Django — Correção de Vulnerabilidades de Segurança
 
 **Dependência afetada**: Django  
 **Versão vulnerável**: >= 5.2, < 5.2.12  
-**Versão corrigida**: 5.2.12  
-**Ação tomada**: Atualização de `Django==5.2.11` para `Django==5.2.12` em `setup.py`
+**Versão corrigida**: 5.2.12 (corrigida no upstream; projeto atualmente em `Django==6.0.4`)  
+**Ação tomada**: Dependência Django mantida em versão não vulnerável (`Django==6.0.4`) em `setup.py`
 
 #### Vulnerabilidade 1 — Consumo Descontrolado de Recursos (Denial of Service)
 
