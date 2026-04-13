@@ -10,5 +10,6 @@ FROM python:$PYTHON_VERSION AS base
 
 ENV PYTHONUNBUFFERED=1
 
-RUN    pip install --upgrade "avaintegration_metapackage==6.0.4.11" uv pip \
+RUN    pip install --upgrade uv pip \
+    && uv pip install --system "avaintegration_metapackage==6.0.4.11" \
     && useradd -ms /usr/sbin/nologin app
