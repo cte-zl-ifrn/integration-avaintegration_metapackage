@@ -6,7 +6,7 @@ long_description = (this_directory / "README.md").read_text(encoding="utf-8")
 
 setup(
     name="avaintegration_metapackage",
-    version="6.0.4.10",
+    version="6.0.4.11",
     description="Meta-pacote para projetos Django",
     long_description=long_description,
     long_description_content_type="text/markdown",
