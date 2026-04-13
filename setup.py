@@ -35,6 +35,7 @@ setup(
         "Django==6.0.4",
         "sc4py==0.1.5",
         "django-extensions==4.1",
+        "sc4net==0.2.0",
         # Da DEAD
         "django-rule-engine==1.0.1",
         "django-dsgovbr==5.2.4",
@@ -43,8 +44,6 @@ setup(
         # Rule engine
         "jsonschema==4.26.0",
         # REST
-        "sc4net==0.2.0",
-        "httpie==3.2.4",
         "requests==2.33.1",
         # Cache and Session
         "django-valkey==0.4.0",
@@ -60,16 +59,13 @@ setup(
         "django-json-widget==2.1.1",
         "django-admin-autocomplete-filter==0.7.1",
         "django-richtextfield==1.6.2",
-        "libsass==0.23.0",
-        "django-compressor==4.6.0",
-        "django-sass-processor==1.4.2",
         # Database
         "psycopg[binary,pool]==3.3.3",
         # # Image
         # "pillow==11.3.0",
         # Production
+        "httpie==3.2.4",
         "sentry-sdk[django,rq]==2.57.0",
-        "gunicorn==25.3.0",
         "uvicorn==0.44.0",
     ],
     packages=["avaintegration_metapackage"],
