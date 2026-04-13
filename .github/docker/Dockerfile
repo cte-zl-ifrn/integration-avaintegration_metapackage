@@ -3,6 +3,7 @@
 ########################################################################
 ARG PYTHON_VERSION=3.14.4-slim-trixie
 ARG PACKAGE_VERSION
+ENV PACKAGE_VERSION=${PACKAGE_VERSION:-unknown}
 
 #########################
 # Base stage
