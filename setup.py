@@ -43,6 +43,7 @@ setup(
         # Rule engine
         "jsonschema==4.26.0",
         # REST
+        "sc4net==0.2.0",
         "httpie==3.2.4",
         "requests==2.33.1",
         # Cache and Session
