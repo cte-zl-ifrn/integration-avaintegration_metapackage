@@ -1,16 +1,26 @@
 
-[![PyPI version](https://badge.fury.io/py/avaintegration-metapackage.svg)](https://badge.fury.io/py/avaintegration-metapackage)
-[![Python Version](https://img.shields.io/pypi/pyversions/avaintegration-metapackage.svg)](https://pypi.org/project/avaintegration-metapackage/)
-[![Docker Image](https://img.shields.io/docker/v/ctezlifrn/avaintegrationbase?label=docker)](https://hub.docker.com/r/ctezlifrn/avaintegrationbase)
-[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/cte-zl-ifrn/integration-avaintegration_metapackage/publish-pypi-and-docker.yml?branch=main)](https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/actions)
-[![GitHub License](https://img.shields.io/github/license/cte-zl-ifrn/integration-avaintegration_metapackage)](hhttps://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/blob/main/LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/cte-zl-ifrn/integration-avaintegration_metapackage?style=social)](https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/stargazers)
-[![GitHub Issues](https://img.shields.io/github/issues/cte-zl-ifrn/integration-avaintegration_metapackage)](https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/issues)
-[![GitHub Last Commit](https://img.shields.io/github/last-commit/cte-zl-ifrn/integration-avaintegration_metapackage)](https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/commits/main)
-
 # AVA Integration Metapackage
-Meta-pacote Python que agrega todas as dependências necessárias para projetos Django do ecossistema de Integração AVA (Integrador, Painel e Gestor).
 
+Project
+
+[![License](https://img.shields.io/badge/License-MIT-lemon.svg)](https://opensource.org/licenses/MIT)
+![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)
+![Docs](https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/actions/workflows/docs.yml/badge.svg)
+
+Python
+
+![Python](https://img.shields.io/pypi/pyversions/avaintegration_metapackage.svg)
+![Coverage](https://codecov.io/gh/kelsoncm/python-avaintegration_metapackage/branch/main/graph/badge.svg)
+![Publish](https://github.com/kelsoncm/python-avaintegration_metapackage/actions/workflows/publish.yml/badge.svg)
+
+Docker
+
+![Version](https://img.shields.io/docker/v/ctezlifrn/avaintegrationbase?sort=semver)
+![Pulls](https://img.shields.io/docker/pulls/ctezlifrn/avaintegrationbase)
+![Build](https://img.shields.io/github/actions/workflow/status/ctezlifrn/python-avaintegration_metapackage/build.yml?logo=docker)
+
+
+Meta-pacote Python 3.14 que agrega todas as dependências necessárias para projetos Django 6.0 do ecossistema AVA do IFRN(Integrador AVA, Painel AVA, Gestor AVA e Leitor EaD).
 
 
 ## 📦 O que é um metapackage?

@@ -7,8 +7,6 @@ Apenas a versão mais recente do `avaintegration_metapackage` recebe atualizaç�
 | Versão   | Suportada          |
 | -------- | ------------------ |
 | 6.0.4.x  | :white_check_mark: |
-| 1.0.x    | :x:                |
-| < 1.0    | :x:                |
 
 ## Dependências e Atualizações
 

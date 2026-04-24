@@ -1,0 +1,54 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+        exclude: \.fwf$|tests\/assets\/example01\.rst|tests\/assets\/example01\.rst\$
+      - id: end-of-file-fixer
+        exclude: \.fwf$|tests\/assets\/example01\.rst|tests\/assets\/example01\.rst$
+      - id: check-yaml
+      - id: check-added-large-files
+
+  - repo: https://github.com/psf/black
+    rev: 26.3.1
+    hooks:
+      - id: black
+        exclude: \.fwf$
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.15.11
+    hooks:
+      - id: ruff
+        args: [--fix]
+        exclude: \.fwf$
+
+  - repo: https://github.com/PyCQA/doc8
+    rev: v2.0.0
+    hooks:
+      - id: doc8
+        args: ["--max-line-length=120"]
+        exclude: tests/assets/example01\.rst
+
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.48.0
+    hooks:
+      - id: markdownlint
+        args: ["--fix"]
+
+  - repo: local
+    hooks:
+      - id: pytest
+        name: pytest
+        stages: [pre-push]
+        language: system
+        entry: pytest --cov=pyfwf --cov-report=xml:coverage.xml --cov-report=term-missing
+        pass_filenames: false
+        always_run: true
+      - id: pytest-coverage-gate
+        name: pytest-coverage-gate
+        stages: [pre-push]
+        entry: python -m coverage_gate --coverage-xml=coverage.xml --baseline=.coverage-baseline
+        language: python
+        pass_filenames: false
+        always_run: true
+        additional_dependencies: ['pytest-coverage-gate>=1.0.3']
