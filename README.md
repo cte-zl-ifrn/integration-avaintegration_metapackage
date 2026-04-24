@@ -1,20 +1,17 @@
 
 # AVA Integration Metapackage
 
-Project
-
+Project :
 [![License](https://img.shields.io/badge/License-MIT-lemon.svg)](https://opensource.org/licenses/MIT)
 ![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)
 ![Docs](https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/actions/workflows/docs.yml/badge.svg)
 
-Python
-
+Python: 
 ![Python](https://img.shields.io/pypi/pyversions/avaintegration_metapackage.svg)
 ![Coverage](https://codecov.io/gh/kelsoncm/python-avaintegration_metapackage/branch/main/graph/badge.svg)
 ![Publish](https://github.com/kelsoncm/python-avaintegration_metapackage/actions/workflows/publish.yml/badge.svg)
 
-Docker
-
+Docker: 
 ![Version](https://img.shields.io/docker/v/ctezlifrn/avaintegrationbase?sort=semver)
 ![Pulls](https://img.shields.io/docker/pulls/ctezlifrn/avaintegrationbase)
 ![Build](https://img.shields.io/github/actions/workflow/status/ctezlifrn/python-avaintegration_metapackage/build.yml?logo=docker)
