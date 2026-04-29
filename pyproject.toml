@@ -21,7 +21,7 @@ classifiers = [
 dependencies = [
     # Core
     "Django==6.0.4",
-    "sc4py==1.1.7",
+    "sc4py==1.1.9",
     "django-extensions==4.1",
     "sc4net==1.2.0",
     # Da DEAD
