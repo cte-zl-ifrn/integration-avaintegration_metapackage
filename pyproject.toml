@@ -20,7 +20,7 @@ classifiers = [
 ]
 dependencies = [
     # Core
-    "Django==6.0.4",
+    "Django==6.0.5",
     "sc4py==1.1.7",
     "django-extensions==4.1",
     "sc4net==1.2.0",
