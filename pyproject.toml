@@ -43,7 +43,7 @@ dependencies = [
     "django-simple-history==3.11.0",
     # UI
     "whitenoise==6.12.0",
-    "django-import-export==4.4.0",
+    "django-import-export==4.4.1",
     "django-json-widget==2.1.1",
     "django-admin-autocomplete-filter==0.7.1",
     "django-richtextfield==1.6.2",
