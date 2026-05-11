@@ -33,4 +33,11 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: .
-          file: .github/docker/Docker
+          file: .github/docker/Dockerfile
+          push: true
+          platforms: linux/amd64,linux/arm64
+          build-args: |
+            AVAINTEGRATION_METAPACKAGE_VERSION=${{ github.event.release.tag_name }}
+          tags: |
+            ctezlifrn/avaintegrationbase:${{ github.event.release.tag_name }}
+            ctezlifrn/avaintegrationbase:latest
