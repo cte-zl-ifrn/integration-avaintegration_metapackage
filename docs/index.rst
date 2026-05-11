@@ -140,10 +140,8 @@ Estrutura do projeto
 Atualizando dependências
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Edite `setup.py` e ajuste as versões em `install_requires`
-2. Teste localmente:
-   .. code-block:: bash
-      pip install -e .
+1. Edite ``setup.py`` e ajuste as versões em ``install_requires``
+2. Teste localmente ``pip install -e .``
 3. Faça commit e crie uma nova tag
 
 Testando localmente
