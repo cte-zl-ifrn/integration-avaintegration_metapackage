@@ -8,12 +8,12 @@ Project :
 
 Python: 
 ![Python](https://img.shields.io/pypi/pyversions/avaintegration_metapackage.svg)
-![Publish](https://github.com/kelsoncm/python-avaintegration_metapackage/actions/workflows/publish-pypi.yml/badge.svg)
+![Publish](https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/actions/workflows/publish-pypi.yml/badge.svg)
 
 Docker: 
 ![Version](https://img.shields.io/docker/v/ctezlifrn/avaintegrationbase?sort=semver)
 ![Pulls](https://img.shields.io/docker/pulls/ctezlifrn/avaintegrationbase)
-![Publish](https://github.com/kelsoncm/python-avaintegration_metapackage/actions/workflows/publish-docker-hub.yml/badge.svg)
+![Publish](https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/actions/workflows/publish-docker-hub.yml/badge.svg)
 
 
 Meta-pacote Python 3.14 que agrega todas as dependências necessárias para projetos Django 6.0 do ecossistema AVA do IFRN(Integrador AVA, Painel AVA, Gestor AVA e Leitor EaD).
