@@ -1,4 +1,3 @@
-from pydoc import __version__
 from unittest import TestCase
 
 
