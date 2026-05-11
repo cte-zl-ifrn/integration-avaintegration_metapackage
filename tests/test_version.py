@@ -1,3 +1,4 @@
+from importlib.metadata import version
 from unittest import TestCase
 
 
@@ -6,4 +7,7 @@ class TestVersion(TestCase):
     def test_module_version(self):
         import avaintegration_metapackage
 
-        self.assertEqual("6.0.4.13", avaintegration_metapackage.version)
+        self.assertEqual(
+            version("avaintegration-metapackage"),
+            avaintegration_metapackage.version,
+        )
