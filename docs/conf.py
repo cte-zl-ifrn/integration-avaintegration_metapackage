@@ -4,7 +4,7 @@ import sys
 
 sys.path.insert(0, os.path.abspath(".."))
 
-project = "avaintegration_metapackage"
+project = "avaintegratio-metapackage"
 
 extensions = [
     "sphinx.ext.autodoc",

@@ -70,8 +70,8 @@ Tecnologias
    :alt: Sentry
 
 Olhe o arquivo 
-[pyproject.toml](https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/blob/main/pyproject.toml)
-, atributo `dependencies`, para conhecer as demais bibliotecas.
+`pyproject.toml <https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/blob/main/pyproject.toml>`_,
+atributo `dependencies`, para conhecer as demais bibliotecas.
 
 🚀 Instalação
 -------------
@@ -79,32 +79,32 @@ Olhe o arquivo
 Via pip
 ^^^^^^^
 .. code-block:: bash
-    pip install avaintegration_metapackage
+   pip install avaintegration_metapackage
 
 Via Docker
 ^^^^^^^^^^
 
 A imagem Docker base já inclui o metapackage instalado:
 
-.. code-block::dockerfile
-    FROM ctezlifrn/avaintegrationbase:6.0.4.13
+.. code-block:: dockerfile
+   FROM ctezlifrn/avaintegrationbase:6.0.4.18
 
 🔄 Workflow de CI/CD
 --------------------
 
 
-.. code-block::bash
-    # 1. Atualize a versão no setup.py (será sobrescrita pela tag)
-    # 2. Crie e envie a tag
-    git tag 6.0.4.13
-    git push origin 6.0.4.13
+.. code-block:: bash
+   # 1. Atualize a versão no setup.py (será sobrescrita pela tag)
+   # 2. Crie e envie a tag
+   git tag 6.0.4.13
+   git push origin 6.0.4.13
 
-    # 3. O GitHub Action irá:
-    #    - Atualizar setup.py com a versão da tag
-    #    - Publicar no PyPI
-    #    - Aguardar 60s para propagação
-    #    - Construir imagem Docker instalando o pacote do PyPI
-    #    - Publicar imagem no Docker Hub
+   # 3. O GitHub Action irá:
+   #    - Atualizar setup.py com a versão da tag
+   #    - Publicar no PyPI
+   #    - Aguardar 60s para propagação
+   #    - Construir imagem Docker instalando o pacote do PyPI
+   #    - Publicar imagem no Docker Hub
 
 Secrets necessários no GitHub
 -----------------------------
@@ -121,41 +121,40 @@ Configure os seguintes secrets no repositório:
 Estrutura do projeto
 ^^^^^^^^^^^^^^^^^^^^^
 
-.. code-block::none
-    metapackage/
-    ├── .github/
-    │   ├── docker/
-    │   │   └── Dockerfile          # Dockerfile para imagem base
-    │   └── workflows/
-    │       └── publish-pypi-and-docker.yml
-    ├── avaintegration_metapackage/
-    │   └── __init__.py             # Versão do pacote
-    ├── setup.py                    # Configuração e dependências
-    ├── Dockerfile                  # Dockerfile de desenvolvimento
-    └── README.md
+.. code-block:: none
+   metapackage/
+   ├── .github/
+   │   ├── docker/
+   │   │   └── Dockerfile          # Dockerfile para imagem base
+   │   └── workflows/
+   │       └── publish-pypi-and-docker.yml
+   ├── avaintegration_metapackage/
+   │   └── __init__.py             # Versão do pacote
+   ├── setup.py                    # Configuração e dependências
+   ├── Dockerfile                  # Dockerfile de desenvolvimento
+   └── README.md
 
 Atualizando dependências
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Edite `setup.py` e ajuste as versões em `install_requires`
 2. Teste localmente:
-    .. code-block::bash
-        pip install -e .
+   .. code-block::bash
+      pip install -e .
 3. Faça commit e crie uma nova tag
 
 Testando localmente
 ^^^^^^^^^^^^^^^^^^^^
 
 .. code-block::bash
-    # Build do pacote
-    python -m build
+   # Build do pacote
+   python -m build
 
-    # Instalação local
-    pip install dist/avaintegration_metapackage-*.whl
+   # Instalação local
+   pip install dist/avaintegration_metapackage-*.whl
 
-    # Teste da imagem Docker
-    docker build -t avaintegrationbase:test -f .github/docker/Dockerfile \
-    --build-arg PACKAGE_VERSION=6.0.4.13 .
+   # Teste da imagem Docker
+   docker build -t avaintegrationbase:test -f .github/docker/Dockerfile --build-arg PACKAGE_VERSION=6.0.4.13 .
 
 🤝 Contribuindo
 ---------------
