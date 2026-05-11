@@ -16,16 +16,12 @@ do ecossistema AVA do IFRN(Integrador AVA, Painel AVA, Gestor AVA e Leitor EaD).
    :target: https://pypi.org/project/avaintegration_metapackage/
    :alt: Python
 
-.. image:: https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/actions/workflows/qa.yml/badge.svg
-   :target: https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/actions/workflows/qa.yml
-   :alt: QA
+.. image:: https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/actions/workflows/publish-pypi.yml/badge.svg
+   :target: https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/actions/workflows/publish-pypi.yml
+   :alt: Publish
 
-.. image:: https://codecov.io/gh/cte-zl-ifrn/integration-avaintegration_metapackage/branch/main/graph/badge.svg
-   :target: https://codecov.io/gh/cte-zl-ifrn/integration-avaintegration_metapackage
-   :alt: Coverage
-
-.. image:: https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/actions/workflows/publish.yml/badge.svg
-   :target: https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/actions/workflows/publish.yml
+.. image:: https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/actions/workflows/publish-docker-hub.yml/badge.svg
+   :target: https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/actions/workflows/publish-docker-hub.yml
    :alt: Publish
 
 .. image:: https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/actions/workflows/docs.yml/badge.svg
@@ -52,7 +48,7 @@ Tecnologias
 -----------
 
 
-.. image:: https://img.shields.io/badge/Django-6.0.4-092E20?style=flat&logo=django&logoColor=white
+.. image:: https://img.shields.io/badge/Django-6.0.5-092E20?style=flat&logo=django&logoColor=white
    :alt: Django
 
 .. image:: https://img.shields.io/badge/Python-3.14.4-3776AB?style=flat&logo=python&logoColor=white
