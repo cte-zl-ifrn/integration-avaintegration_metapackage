@@ -2,7 +2,6 @@
 # Args
 ########################################################################
 ARG PYTHON_VERSION=3.14.4-slim-trixie
-ARG AVAINTEGRATION_METAPACKAGE_VERSION
 
 #########################
 # Base stage
@@ -10,7 +9,10 @@ ARG AVAINTEGRATION_METAPACKAGE_VERSION
 FROM python:$PYTHON_VERSION AS base
 
 ENV PYTHONUNBUFFERED=1
+ENV PIP_NO_CACHE_DIR=1
+ARG AVAINTEGRATION_METAPACKAGE_VERSION
 
 RUN pip install --upgrade uv pip \
     && uv pip install --system "avaintegration_metapackage==${AVAINTEGRATION_METAPACKAGE_VERSION}" \
     && useradd -ms /usr/sbin/nologin app
+
