@@ -6,6 +6,8 @@ on:
     types:
       - completed
 
+permissions:
+  contents: read
 
 jobs:
   set-version:
