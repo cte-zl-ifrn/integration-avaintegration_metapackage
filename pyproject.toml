@@ -20,8 +20,8 @@ classifiers = [
 ]
 dependencies = [
     # Core
-    "Django==6.0.4",
-    "sc4py==1.1.7",
+    "Django==6.0.5",
+    "sc4py==1.1.9",
     "django-extensions==4.1",
     "sc4net==1.2.0",
     # Da DEAD
@@ -34,26 +34,26 @@ dependencies = [
     # REST
     "requests==2.33.1",
     # Cache and Session
-    "django-valkey==0.4.0",
+    "django-valkey==0.4.1",
     "valkey==6.1.1",
     # # Security
-    # "cryptography==46.0.3",
-    # "pyjwt==2.10.1",
+    # "cryptography==48.0.0",
+    # "pyjwt==2.12.1",
     # Audit
     "django-simple-history==3.11.0",
     # UI
     "whitenoise==6.12.0",
-    "django-import-export==4.4.0",
+    "django-import-export==4.4.1",
     "django-json-widget==2.1.1",
     "django-admin-autocomplete-filter==0.7.1",
     "django-richtextfield==1.6.2",
     # Database
-    "psycopg[binary,pool]==3.3.3",
+    "psycopg[binary,pool]==3.3.4",
     # # Image
-    # "pillow==11.3.0",
+    # "pillow==12.2.0",
     # Production
     "httpie==3.2.4",
-    "sentry-sdk[django,rq]==2.58.0",
+    "sentry-sdk[django,rq]==2.59.0",
     "uvicorn==0.46.0",
 ]
 

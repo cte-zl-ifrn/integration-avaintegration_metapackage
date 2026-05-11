@@ -121,7 +121,7 @@ pip install dist/avaintegration_metapackage-*.whl
 
 # Teste da imagem Docker
 docker build -t avaintegrationbase:test -f .github/docker/Dockerfile \
-  --build-arg PACKAGE_VERSION=6.0.4.13 .
+  --build-arg PACKAGE_VERSION=6.0.5.14 .
 ```
 
 ## 🤝 Contribuindo
