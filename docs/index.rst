@@ -16,14 +16,6 @@ do ecossistema AVA do IFRN(Integrador AVA, Painel AVA, Gestor AVA e Leitor EaD).
    :target: https://pypi.org/project/avaintegration_metapackage/
    :alt: Python
 
-.. image:: https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/actions/workflows/publish-pypi.yml/badge.svg
-   :target: https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/actions/workflows/publish-pypi.yml
-   :alt: Publish
-
-.. image:: https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/actions/workflows/publish-docker-hub.yml/badge.svg
-   :target: https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/actions/workflows/publish-docker-hub.yml
-   :alt: Publish
-
 .. image:: https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/actions/workflows/docs.yml/badge.svg
    :target: https://kelsoncm.github.io/python-avaintegration_metapackage/
    :alt: Docs
@@ -31,6 +23,14 @@ do ecossistema AVA do IFRN(Integrador AVA, Painel AVA, Gestor AVA e Leitor EaD).
 .. image:: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit
    :target: https://github.com/pre-commit/pre-commit
    :alt: pre-commit
+
+.. image:: https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/actions/workflows/publish-pypi.yml/badge.svg
+   :target: https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/actions/workflows/publish-pypi.yml
+   :alt: Publish
+
+.. image:: https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/actions/workflows/publish-docker-hub.yml/badge.svg
+   :target: https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/actions/workflows/publish-docker-hub.yml
+   :alt: Publish
 
 
 📦 O que é um metapackage?
