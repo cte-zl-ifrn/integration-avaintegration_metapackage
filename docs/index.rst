@@ -58,9 +58,6 @@ Tecnologias
 .. image:: https://img.shields.io/badge/Python-3.14.4-3776AB?style=flat&logo=python&logoColor=white
    :alt: Python
 
-.. image:: https://img.shields.io/badge/Python-3.14.4-3776AB?style=flat&logo=python&logoColor=white
-   :alt: Python
-
 .. image:: https://img.shields.io/badge/PostgreSQL-16-336791?style=flat&logo=postgresql&logoColor=white
    :alt: PostgreSQL
 
@@ -85,7 +82,7 @@ Olhe o arquivo
 
 Via pip
 ^^^^^^^
-.. code-block::bash
+.. code-block:: bash
     pip install avaintegration_metapackage
 
 Via Docker
