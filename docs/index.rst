@@ -85,7 +85,7 @@ Olhe o arquivo
 
 Via pip
 ^^^^^^^
-.. code-block::bash
+.. code-block:: bash
     pip install avaintegration_metapackage
 
 Via Docker
