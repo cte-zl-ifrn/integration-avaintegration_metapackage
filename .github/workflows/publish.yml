@@ -37,8 +37,20 @@ jobs:
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1.14
 
-      - name: Wait for PyPI propagation
-        run: sleep 60
+      - name: Wait for package on PyPI
+        run: |
+          set -e
+          VERSION="${{ github.event.release.tag_name }}"
+          for i in $(seq 1 36); do
+            if curl -fsSL "https://pypi.org/pypi/avaintegration-metapackage/${VERSION}/json" > /dev/null; then
+              echo "Package ${VERSION} is available on PyPI."
+              exit 0
+            fi
+            echo "Waiting for avaintegration-metapackage ${VERSION} on PyPI... attempt ${i}/36"
+            sleep 10
+          done
+          echo "Package ${VERSION} did not appear on PyPI in time."
+          exit 1
 
   publish-docker:
     needs: publish-pypi
@@ -73,4 +85,3 @@ jobs:
             AVAINTEGRATION_METAPACKAGE_VERSION=${{ github.event.release.tag_name }}
           tags: |
             ctezlifrn/avaintegrationbase:${{ github.event.release.tag_name }}
-            ctezlifrn/avaintegrationbase:latest
