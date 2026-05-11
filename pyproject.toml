@@ -21,12 +21,19 @@ classifiers = [
 dependencies = [
     # Core
     "Django==6.0.5",
-    "sc4py==1.1.9",
     "django-extensions==4.1",
+
+    # KelsonCM
+    "sc4py==1.1.9",
     "sc4net==1.2.0",
-    # Da DEAD
+    "pyfwf==1.0.1",
+    "abrasileirado==1.0.1",
     "django-rule-engine==1.0.1",
+    "suap-auth==1.0.1",
+    "sabia-auth==1.0.1",
     "django-dsgovbr==5.2.4",
+    # "django-admintheme-adminlte3",
+    # "django-abrasileirado",
     # Models
     "django-better-choices==3.1",
     # Rule engine
