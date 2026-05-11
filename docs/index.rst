@@ -79,6 +79,7 @@ atributo `dependencies`, para conhecer as demais bibliotecas.
 Via pip
 ^^^^^^^
 .. code-block:: bash
+
    pip install avaintegration_metapackage
 
 Via Docker
@@ -87,6 +88,7 @@ Via Docker
 A imagem Docker base já inclui o metapackage instalado:
 
 .. code-block:: dockerfile
+
    FROM ctezlifrn/avaintegrationbase:6.0.4.18
 
 🔄 Workflow de CI/CD
@@ -94,6 +96,7 @@ A imagem Docker base já inclui o metapackage instalado:
 
 
 .. code-block:: bash
+
    # 1. Atualize a versão no setup.py (será sobrescrita pela tag)
    # 2. Crie e envie a tag
    git tag 6.0.4.13
@@ -111,9 +114,8 @@ Secrets necessários no GitHub
 
 Configure os seguintes secrets no repositório:
 
-- `PYPI_API_TOKEN` - Token de API do PyPI
-- `DOCKERHUB_USERNAME` - Usuário do Docker Hub
-- `DOCKERHUB_TOKEN` - Token de acesso do Docker Hub
+- **DOCKERHUB_USERNAME** - Usuário do Docker Hub
+- **DOCKERHUB_TOKEN** - Token de acesso do Docker Hub
 
 🛠️ Desenvolvimento
 ------------------
@@ -122,6 +124,7 @@ Estrutura do projeto
 ^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: none
+
    metapackage/
    ├── .github/
    │   ├── docker/
@@ -139,14 +142,15 @@ Atualizando dependências
 
 1. Edite `setup.py` e ajuste as versões em `install_requires`
 2. Teste localmente:
-   .. code-block::bash
+   .. code-block:: bash
       pip install -e .
 3. Faça commit e crie uma nova tag
 
 Testando localmente
 ^^^^^^^^^^^^^^^^^^^^
 
-.. code-block::bash
+.. code-block:: bash
+
    # Build do pacote
    python -m build
 
