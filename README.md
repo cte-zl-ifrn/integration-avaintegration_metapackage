@@ -49,7 +49,7 @@ pip install avaintegration_metapackage
 A imagem Docker base já inclui o metapackage instalado:
 
 ```dockerfile
-FROM ctezlifrn/avaintegrationbase:6.0.5.31
+FROM ctezlifrn/avaintegrationbase:6.0.5.32
 ```
 
 ## 🔄 Workflow de CI/CD
@@ -115,7 +115,7 @@ pip install dist/avaintegration_metapackage-*.whl
 
 # Teste da imagem Docker
 docker build -t avaintegrationbase:test -f .github/docker/Dockerfile \
-  --build-arg PACKAGE_VERSION=6.0.5.31 .
+  --build-arg PACKAGE_VERSION=6.0.5.32 .
 ```
 
 ## 🤝 Contribuindo

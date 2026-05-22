@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "avaintegration_metapackage"
-version = "6.0.5.31"
+version = "6.0.5.32"
 description = "Meta-pacote para projetos Django"
 readme = "README.md"
 license = { file = "LICENSE.md" }
@@ -64,6 +64,7 @@ dependencies = [
     "httpie==3.2.4",
     "sentry-sdk[django,rq]==2.60.0",
     "uvicorn==0.47.0",
+    "gunicorn==26.0.0",
 ]
 
 
