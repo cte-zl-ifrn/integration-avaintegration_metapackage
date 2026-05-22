@@ -41,6 +41,7 @@ dependencies = [
     "jsonschema==4.26.0",
     # REST
     "requests==2.33.1",
+    "django-ninja==1.6.2",
     # Cache and Session
     "django-valkey==0.4.1",
     "valkey==6.1.1",
