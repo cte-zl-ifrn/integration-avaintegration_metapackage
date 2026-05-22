@@ -40,7 +40,7 @@ dependencies = [
     # Rule engine
     "jsonschema==4.26.0",
     # REST
-    "requests==2.33.1",
+    "requests==2.34.2",
     "django-ninja==1.6.2",
     # Cache and Session
     "django-valkey==0.4.1",
