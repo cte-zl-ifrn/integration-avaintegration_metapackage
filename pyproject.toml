@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "avaintegration_metapackage"
-version = "6.0.5.28"
+version = "6.0.5.29"
 description = "Meta-pacote para projetos Django"
 readme = "README.md"
 license = { file = "LICENSE.md" }
@@ -36,6 +36,7 @@ dependencies = [
     # "django-abrasileirado",
     # Models
     "django-better-choices==3.1",
+    "django-safedelete==1.4.1",
     # Rule engine
     "jsonschema==4.26.0",
     # REST
@@ -45,7 +46,7 @@ dependencies = [
     "valkey==6.1.1",
     # # Security
     # "cryptography==48.0.0",
-    # "pyjwt==2.12.1",
+    "pyjwt==2.12.1",
     # Audit
     "django-simple-history==3.11.0",
     # UI
@@ -60,15 +61,15 @@ dependencies = [
     # "pillow==12.2.0",
     # Production
     "httpie==3.2.4",
-    "sentry-sdk[django,rq]==2.59.0",
-    "uvicorn==0.46.0",
+    "sentry-sdk[django,rq]==2.60.0",
+    "uvicorn==0.47.0",
 ]
 
 
 [project.optional-dependencies]
 dev = [
     "pre-commit>=4.6.0",
-    "black>=26.3.1",
+    "black>=26.5.1",
     "ruff>=0.15.11",
     "doc8>=2.0.0",
     "pytest>=9.0.3",
