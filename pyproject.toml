@@ -63,7 +63,7 @@ dependencies = [
     # Production
     "httpie==3.2.4",
     "sentry-sdk[django,rq]==2.60.0",
-    "uvicorn==0.47.0",
+    "uvicorn==0.48.0",
     "gunicorn==26.0.0",
 ]
 
