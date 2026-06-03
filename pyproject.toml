@@ -20,7 +20,7 @@ classifiers = [
 ]
 dependencies = [
     # Core
-    "Django==6.0.5",
+    "Django==6.0.6",
     "django-extensions==4.1",
 
     # KelsonCM
