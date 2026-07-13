@@ -1,6 +1,9 @@
 
 # AVA Integration Metapackage
 
+> **_PARA USO APENAS_** no IFRN, **USE apenas neste sentido**.
+
+
 Project :
 [![License](https://img.shields.io/badge/License-MIT-lemon.svg)](https://opensource.org/licenses/MIT)
 ![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)
