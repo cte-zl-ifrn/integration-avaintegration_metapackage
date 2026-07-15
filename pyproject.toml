@@ -62,7 +62,7 @@ dependencies = [
     # "pillow==12.2.0",
     # Production
     "httpie==3.2.4",
-    "sentry-sdk[django,rq]==2.60.0",
+    "sentry-sdk[django,rq]==2.65.0",
     "uvicorn==0.47.0",
     "gunicorn==26.0.0",
 ]
