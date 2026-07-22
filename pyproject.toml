@@ -26,7 +26,7 @@ dependencies = [
     # KelsonCM
     "sc4py==1.1.9",
     "sc4net==1.2.0",
-    "pyfwf==1.0.1",
+    "pyfwf==1.0.4",
     "abrasileirado==1.0.1",
     "django-rule-engine==1.0.1",
     "django-suap-auth==1.0.1",
