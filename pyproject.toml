@@ -49,7 +49,7 @@ dependencies = [
     # "cryptography==48.0.0",
     "pyjwt==2.12.1",
     # Audit
-    "django-simple-history==3.11.0",
+    "django-simple-history==3.13.0",
     # UI
     "whitenoise==6.12.0",
     "django-import-export==4.4.1",
