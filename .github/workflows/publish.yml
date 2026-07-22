@@ -24,7 +24,7 @@ jobs:
           sed -i 's/^version = .*/version = "${{ github.event.release.tag_name }}"/' pyproject.toml
 
       - name: Set up Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v7
         with:
           python-version: "3.14"
 
