@@ -64,7 +64,7 @@ dependencies = [
     "httpie==3.2.4",
     "sentry-sdk[django,rq]==2.60.0",
     "uvicorn==0.47.0",
-    "gunicorn==26.0.0",
+    "gunicorn==26.1.0",
 ]
 
 
