@@ -48,7 +48,7 @@ Tecnologias
 -----------
 
 
-.. image:: https://img.shields.io/badge/Django-6.0.5-092E20?style=flat&logo=django&logoColor=white
+.. image:: https://img.shields.io/badge/Django-6.0.8-092E20?style=flat&logo=django&logoColor=white
    :alt: Django
 
 .. image:: https://img.shields.io/badge/Python-3.14.4-3776AB?style=flat&logo=python&logoColor=white
@@ -89,7 +89,7 @@ A imagem Docker base já inclui o metapackage instalado:
 
 .. code-block:: dockerfile
 
-   FROM ctezlifrn/avaintegrationbase:6.0.5.32
+   FROM ctezlifrn/avaintegrationbase:6.0.8.38
 
 🔄 Workflow de CI/CD
 --------------------
@@ -156,7 +156,7 @@ Testando localmente
    pip install dist/avaintegration_metapackage-*.whl
 
    # Teste da imagem Docker
-   docker build -t avaintegrationbase:test -f .github/docker/Dockerfile --build-arg PACKAGE_VERSION=6.0.5.32 .
+   docker build -t avaintegrationbase:test -f .github/docker/Dockerfile --build-arg PACKAGE_VERSION=6.0.8.38 .
 
 🤝 Contribuindo
 ---------------

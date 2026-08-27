@@ -28,7 +28,7 @@ Um metapackage é um pacote Python que não contém código próprio, mas declar
 
 ## Tecnologias
 
-![Django](https://img.shields.io/badge/Django-6.0.4-092E20?style=flat&logo=django&logoColor=white)
+![Django](https://img.shields.io/badge/Django-6.0.8-092E20?style=flat&logo=django&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3.14.4-3776AB?style=flat&logo=python&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-336791?style=flat&logo=postgresql&logoColor=white)
 ![Redis](https://img.shields.io/badge/Valkey-6.1.1-DC382D?style=flat&logo=redis&logoColor=white)
@@ -51,7 +51,7 @@ pip install avaintegration_metapackage
 A imagem Docker base já inclui o metapackage instalado:
 
 ```dockerfile
-FROM ctezlifrn/avaintegrationbase:6.0.5.32
+FROM ctezlifrn/avaintegrationbase:6.0.8.38
 ```
 
 ## 🔄 Workflow de CI/CD
@@ -117,7 +117,7 @@ pip install dist/avaintegration_metapackage-*.whl
 
 # Teste da imagem Docker
 docker build -t avaintegrationbase:test -f .github/docker/Dockerfile \
-  --build-arg PACKAGE_VERSION=6.0.5.32 .
+  --build-arg PACKAGE_VERSION=6.0.8.38 .
 ```
 
 ## 🤝 Contribuindo
