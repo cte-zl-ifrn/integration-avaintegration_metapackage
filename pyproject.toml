@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "avaintegration_metapackage"
-version = "6.0.8.38"
+version = "6.0.8.39"
 description = "Meta-pacote para projetos Django"
 readme = "README.md"
 license = { file = "LICENSE.md" }
@@ -29,7 +29,7 @@ dependencies = [
     "pyfwf==1.0.4",
     "abrasileirado==1.0.1",
     "django-rule-engine==1.0.1",
-    "django-suap-auth==1.6.0",
+    "django-suap-auth==1.8.3",
     "django-sabia-auth==1.1.0",
     "django-dsgovbr==5.2.4",
     # "django-admintheme-adminlte3",
