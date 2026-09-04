@@ -74,6 +74,14 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
+      - name: Extract version tags
+        id: meta
+        run: |
+          TAG="${{ github.event.release.tag_name }}"
+          CLEAN="${TAG#v}"
+          echo "tag=${TAG}" >> $GITHUB_OUTPUT
+          echo "clean=${CLEAN}" >> $GITHUB_OUTPUT
+
       - name: Build and push Docker image
         uses: docker/build-push-action@v7.3.0
         with:
@@ -82,6 +90,7 @@ jobs:
           push: true
           platforms: linux/amd64,linux/arm64
           build-args: |
-            PACKAGE_VERSION=${{ github.event.release.tag_name }}
+            PACKAGE_VERSION=${{ steps.meta.outputs.tag }}
           tags: |
-            ctezlifrn/avaintegrationbase:${{ github.event.release.tag_name }}
+            ctezlifrn/avaintegrationbase:${{ steps.meta.outputs.tag }}
+            ctezlifrn/avaintegrationbase:${{ steps.meta.outputs.clean }}
