@@ -8,23 +8,23 @@ Project :
 ![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)
 ![Docs](https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/actions/workflows/docs.yml/badge.svg)
 
-Publish: 
+Publish:
 ![Publish](https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/actions/workflows/publish.yml/badge.svg)
 ![Python](https://img.shields.io/pypi/pyversions/avaintegration_metapackage.svg)
 ![Docker](https://img.shields.io/docker/v/ctezlifrn/avaintegrationbase)
 
-Meta-pacote Python 3.14 que agrega todas as dependências necessárias para projetos Django 6.0 do ecossistema AVA do IFRN(Integrador AVA, Painel AVA, Gestor AVA e Leitor EaD).
-
+Meta-pacote Python 3.14 que agrega todas as dependências necessárias para projetos Django 6.0 do
+ecossistema AVA do IFRN (Integrador AVA, Painel AVA, Gestor AVA e Leitor EaD).
 
 ## 📦 O que é um metapackage?
 
-Um metapackage é um pacote Python que não contém código próprio, mas declara um conjunto de dependências. Ao instalar o metapackage, todas as suas dependências são instaladas automaticamente, garantindo:
+Um metapackage é um pacote Python que não contém código próprio, mas declara um conjunto de dependências.
+Ao instalar o metapackage, todas as suas dependências são instaladas automaticamente, garantindo:
 
 - ✅ **Versionamento unificado** de dependências entre projetos
 - ✅ **Consistência** entre ambientes de desenvolvimento, teste e produção
 - ✅ **Simplificação** do gerenciamento de dependências
 - ✅ **Sincronização automática** via imagem Docker base
-
 
 ## Tecnologias
 
@@ -36,7 +36,7 @@ Um metapackage é um pacote Python que não contém código próprio, mas declar
 ![Gunicorn](https://img.shields.io/badge/Gunicorn-25.3.0-499848?style=flat&logo=gunicorn&logoColor=white)
 ![Sentry](https://img.shields.io/badge/Sentry-2.57.0-362D59?style=flat&logo=sentry&logoColor=white)
 
-Olhe o arquivo [setup.py](https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/blob/e7ec1a52f216d008539f4a56161fe9461d360c4e/setup.py#L33), atributo `install_requires`, para conhecer as demais bibliotecas.
+Olhe o arquivo `pyproject.toml`, atributo `dependencies`, para conhecer as demais bibliotecas.
 
 ## 🚀 Instalação
 
@@ -55,7 +55,6 @@ FROM ctezlifrn/avaintegrationbase:6.0.8.40
 ```
 
 ## 🔄 Workflow de CI/CD
-
 
 ```bash
 # 1. Atualize a versão no setup.py (será sobrescrita pela tag)
@@ -83,7 +82,7 @@ Configure os seguintes secrets no repositório:
 
 ### Estrutura do projeto
 
-```
+```text
 metapackage/
 ├── .github/
 │   ├── docker/
@@ -101,9 +100,11 @@ metapackage/
 
 1. Edite `setup.py` e ajuste as versões em `install_requires`
 2. Teste localmente:
+
    ```bash
    pip install -e .
    ```
+
 3. Faça commit e crie uma nova tag
 
 ### Testando localmente

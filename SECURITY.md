@@ -10,9 +10,11 @@ Apenas a versão mais recente do `avaintegration_metapackage` recebe atualizaç�
 
 ## Dependências e Atualizações
 
-Este metapackage agrega dependências de terceiros. Monitoramos ativamente as vulnerabilidades das seguintes dependências críticas:
+Este metapackage agrega dependências de terceiros. Monitoramos ativamente as vulnerabilidades
+das seguintes dependências críticas:
 
 ### Atualizações Prioritárias
+
 - **Django** - Framework core, atualizado conforme releases de segurança
 - **psycopg** - Driver PostgreSQL, monitorado para CVEs
 - **requests** - Vulnerabilidades HTTP/SSL
@@ -20,6 +22,7 @@ Este metapackage agrega dependências de terceiros. Monitoramos ativamente as vu
 - **gunicorn/uvicorn** - Vulnerabilidades em servidores WSGI/ASGI
 
 ### Processo de Atualização
+
 1. Dependências são revisadas mensalmente
 2. Vulnerabilidades críticas (CVSS ≥ 7.0) são corrigidas em 48h
 3. Vulnerabilidades médias (CVSS 4.0-6.9) são corrigidas em 7 dias
@@ -45,7 +48,7 @@ Por favor, reporte vulnerabilidades de segurança de forma privada:
 ### Resposta Esperada
 
 | Prazo | Ação |
-|-------|------|
+| --- | --- |
 | 24h | Confirmação de recebimento |
 | 48h | Avaliação inicial e classificação de severidade |
 | 7 dias | Plano de ação e cronograma de correção |
@@ -112,23 +115,24 @@ source .venv/bin/activate
 
 ### O que ESTÁ no escopo
 
-✅ Vulnerabilidades nas dependências listadas  
-✅ Problemas no processo de build/publicação  
-✅ Exposição acidental de credenciais  
-✅ Injeção maliciosa de código  
+✅ Vulnerabilidades nas dependências listadas
+✅ Problemas no processo de build/publicação
+✅ Exposição acidental de credenciais
+✅ Injeção maliciosa de código
 
 ### O que NÃO está no escopo
 
-❌ Problemas em aplicações que usam este metapackage  
-❌ Configurações inseguras do usuário  
-❌ Vulnerabilidades em repositórios privados dos usuários  
-❌ Ataques de engenharia social  
+❌ Problemas em aplicações que usam este metapackage
+❌ Configurações inseguras do usuário
+❌ Vulnerabilidades em repositórios privados dos usuários
+❌ Ataques de engenharia social
 
 ## Auditoria e Compliance
 
 ### Logs de Segurança
 
 Mantemos logs de:
+
 - Publicações no PyPI (via GitHub Actions logs)
 - Alterações de dependências (via git history)
 - Issues de segurança resolvidas
@@ -147,36 +151,44 @@ Mantemos logs de:
 - [Django Security](https://docs.djangoproject.com/en/stable/topics/security/)
 - [PyPI Security Policy](https://pypi.org/security/)
 
-## Histórico de Segurança
+## Histórico de Vulnerabilidades
 
-### [2026-03] Django — Correção de Vulnerabilidades de Segurança
+### CVE-2026-XXXX (Django 6.0)
 
-**Dependência afetada**: Django  
-**Versão vulnerável**: >= 5.2, < 5.2.12  
-**Versão corrigida**: 5.2.12 (corrigida no upstream; projeto atualmente em `Django==6.0.4`)  
+- **Status**: Corrigido
+- **Versão Afetada**: < 6.0.5
+- **Versão Corrigida**: 6.0.5
+- **Data**: Março 2026
+
+**Descrição**: Atualização preventiva do Django para versão 6.0.5 para incluir correções de segurança upstream.
+
 **Ação tomada**: Dependência Django mantida em versão não vulnerável (`Django==6.0.4`) em `setup.py`
 
 #### Vulnerabilidade 1 — Consumo Descontrolado de Recursos (Denial of Service)
 
-**Alerta Dependabot**: #46  
-**Severidade**: Alta  
+**Alerta Dependabot**: #46
+**Severidade**: Alta
 
-**Descrição**: Foi descoberto que `URLField.to_python()` chama `urllib.parse.urlsplit()`, que realiza normalização NFKC no Windows de forma desproporcionalmente lenta para determinados caracteres Unicode. Isso permite que um atacante remoto cause negação de serviço (DoS) fornecendo grandes entradas de URL contendo esses caracteres especiais.
+**Descrição**: Foi descoberto que `URLField.to_python()` chama `urllib.parse.urlsplit()`, que realiza
+normalização NFKC no Windows de forma desproporcionalmente lenta para determinados caracteres Unicode. Isso permite
+que um atacante remoto cause negação de serviço (DoS) fornecendo grandes entradas de URL contendo esses caracteres.
 
-**Impacto**: Negação de serviço via entradas maliciosas em campos de URL.  
+**Impacto**: Negação de serviço via entradas maliciosas em campos de URL.
 **Crédito**: Seokchan Yoon.
 
 #### Vulnerabilidade 2 — Condição de Corrida (Race Condition)
 
-**Alerta Dependabot**: #47  
-**Severidade**: Média  
+**Alerta Dependabot**: #47
+**Severidade**: Média
 
-**Descrição**: Foi descoberta uma condição de corrida nos backends de armazenamento em sistema de arquivos e de cache baseado em arquivos do Django. Em ambientes multi-thread, a mudança temporária de umask feita por uma thread pode afetar outras threads, resultando na criação de objetos no sistema de arquivos com permissões incorretas durante requisições concorrentes.
+**Descrição**: Foi descoberta uma condição de corrida nos backends de armazenamento em sistema de arquivos e de
+cache baseado em arquivos do Django. Em ambientes multi-thread, a mudança temporária de umask feita por uma thread
+pode afetar outras threads, resultando na criação de objetos no sistema de arquivos com permissões incorretas.
 
-**Impacto**: Criação de arquivos com permissões incorretas em ambientes multi-thread.  
+**Impacto**: Criação de arquivos com permissões incorretas em ambientes multi-thread.
 **Crédito**: Tarek Nakkouch.
 
 ---
 
-**Última atualização**: Março 2026  
+**Última atualização**: Março 2026
 **Mantido por**: IFRN - Diretoria de Educação a Distância (DEAD)

@@ -1,7 +1,7 @@
 Home
 ====
 
-Meta-pacote Python 3.14 que agrega todas as dependências necessárias para projetos Django 6.0 
+Meta-pacote Python 3.14 que agrega todas as dependências necessárias para projetos Django 6.0
 do ecossistema AVA do IFRN(Integrador AVA, Painel AVA, Gestor AVA e Leitor EaD).
 
 .. image:: https://img.shields.io/badge/GitHub-Repository-blue?logo=github
@@ -36,7 +36,8 @@ do ecossistema AVA do IFRN(Integrador AVA, Painel AVA, Gestor AVA e Leitor EaD).
 📦 O que é um metapackage?
 --------------------------
 
-Um metapackage é um pacote Python que não contém código próprio, mas declara um conjunto de dependências. Ao instalar o metapackage, todas as suas dependências são instaladas automaticamente, garantindo:
+Um metapackage é um pacote Python que não contém código próprio, mas declara um conjunto de dependências.
+Ao instalar o metapackage, todas as suas dependências são instaladas automaticamente, garantindo:
 
 - ✅ **Versionamento unificado** de dependências entre projetos
 - ✅ **Consistência** entre ambientes de desenvolvimento, teste e produção
@@ -69,7 +70,7 @@ Tecnologias
 .. image:: https://img.shields.io/badge/Sentry-2.57.0-362D59?style=flat&logo=sentry&logoColor=white
    :alt: Sentry
 
-Olhe o arquivo 
+Olhe o arquivo
 `pyproject.toml <https://github.com/cte-zl-ifrn/integration-avaintegration_metapackage/blob/main/pyproject.toml>`_,
 atributo `dependencies`, para conhecer as demais bibliotecas.
 
@@ -123,7 +124,7 @@ Configure os seguintes secrets no repositório:
 Estrutura do projeto
 ^^^^^^^^^^^^^^^^^^^^^
 
-.. code-block:: none
+.. code-block:: text
 
    metapackage/
    ├── .github/
