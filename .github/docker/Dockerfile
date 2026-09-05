@@ -15,4 +15,3 @@ ARG PACKAGE_VERSION
 RUN pip install --upgrade uv pip \
     && uv pip install --system "avaintegration_metapackage==${PACKAGE_VERSION}" \
     && useradd -ms /usr/sbin/nologin app
-
