@@ -57,7 +57,7 @@ dependencies = [
     "django-admin-autocomplete-filter==0.7.1",
     "django-richtextfield==1.6.2",
     # Database
-    "psycopg[binary,pool]==3.3.4",
+    "psycopg[binary,pool]==3.3.5",
     # # Image
     # "pillow==12.2.0",
     # Production
